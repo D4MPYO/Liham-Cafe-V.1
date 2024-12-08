@@ -1,0 +1,320 @@
+@font-face{
+    font-family: myfont;
+    src: url(Fonts/static/Teko-SemiBold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: myfont;
+}
+/* Header Styles */
+header {
+    color: white;
+    padding: 1em 0;
+    position: fixed;
+    height: auto;
+    width: 100%;
+    z-index: 10;
+    backdrop-filter: blur(8px);
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: #402113;
+    width: 100%;
+    height: 80px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .logo img {
+    width: 90px;
+    margin-right: 90px; 
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+    justify-content: center; 
+    flex-grow: 1; 
+}
+
+.navbar .toggle_btn {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* Dropdown Menu Styles */
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background-color: #b78f76;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 15;
+}
+
+.dropdown_menu.open {
+    height: 220px;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Anchor Styles */
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+a:hover {
+    color: gold;
+}
+
+li {
+    list-style: none;
+}
+
+/* Action Button Styles */
+.action_btn {
+    background-color: orange;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease; 
+}
+
+.action_btn:hover {
+    transform: scale(1.05);
+    color: white;
+}
+
+.action_btn:active {
+    transform: scale(0.95);
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+    .navbar .links,
+    .navbar .action_btn {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+    .menu-item {
+        flex-basis: calc(50% - 20px); 
+    }
+
+}
+
+@media (max-width: 576px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+    }
+    .menu-item {
+        flex-basis: 100%; 
+    }
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .text,
+    .image {
+        flex: 1 1 100%; 
+        text-align: center;
+        padding: 0;
+    }
+
+    .text {
+        order: 2;
+    }
+
+    .image {
+        order: 1; 
+    }
+}
+
+body {
+    background-image: url('Images/Labas.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+
+.contact-details {
+    background-color: rgba(31, 32, 31, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left; 
+    max-width: 500px;
+    margin: 75px;
+    position: absolute; 
+    top: 40%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    right: auto; 
+    left: 20px; 
+    transform: translateY(-50%);
+    max-width: 1000px;
+    font-size: 1.4em;
+    line-height: 1.2; 
+}
+
+
+.contact-details h1 {
+    font-size: 2em; 
+    color: black; 
+    margin-bottom: 0.5em; 
+}
+
+.contact-details h1,
+.contact-details h2 {
+    text-align: center; 
+}
+
+.office-highlight {
+    color: red; 
+}
+
+.contact-details p {
+    font-size: 1em; 
+    color: black; 
+    line-height: 1.; 
+    margin-bottom: 0.5em; 
+}
+
+.contact-details a {
+    color: black; 
+    text-decoration: none; 
+}
+
+.contact-details a:hover {
+    text-decoration: underline; 
+}
+
+.contact-details .social-media {
+    margin-top: 1em; 
+    text-align: center;
+}
+
+.contact-details .social-media h2 {
+    font-size: 1.5em; 
+    margin-bottom: 0.5em; 
+}
+
+.with-us-highlight {
+    color: green; 
+}
+
+.contact-details .social-media a {
+    display: inline-block; 
+    margin: 0 0.5em;
+    color: inherit; 
+    font-size: 1.5em; 
+}
+
+/* Adding a hover effect for social media icons */
+.contact-details .social-media a:hover {
+    color: white; 
+    transform: scale(1.1); 
+}
+
+main {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: flex-start; 
+    gap: 20px; 
+    padding: 20px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.contact-details {
+    background-color: #fff;
+    padding: 1.25em; 
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left; 
+    margin: 4.6875em auto; 
+    font-size: 1.4em; 
+    line-height: 1.5; 
+    max-width: 62.5em; 
+}
+
+@media (max-width: 768px) {
+    .contact-details {
+        padding: 1em;
+        font-size: 1.2em; 
+        max-width: 100%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .text, .image {
+        flex-basis: 100%; 
+    }
+}
+
+/* Additional Media Query for Extra Small Devices */
+@media (max-width: 480px) {
+    .contact-details {
+        padding: 15px; 
+        font-size: 1em; 
+    }
+}

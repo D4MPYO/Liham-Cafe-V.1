@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Images/SURE.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"  />
+    <link rel="stylesheet" href="style.css">
+    <title>Liham Cafe</title>
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <div class="navbar">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#">
+                    <img src="Images/Logooo.png" alt="Liham Cafe Logo">Liham Cafe</a>
+            </div>
+            
+            <!-- Navigation links -->
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- Toggle button -->
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    
+        <!-- Dropdown menu -->
+        <div class="dropdown_menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </div>
+
+        <!-- Background video -->
+        <div id="video-container">
+            <video autoplay muted loop id="videoBG">
+                <source src="Video/F-VID.mp4" type="video/mp4">
+            </video>
+            </div>
+            <img src="Images/Bannnner.png" class="img-fluid" alt="Responsive Image">
+        
+            <div class="content">
+                <div class="text">
+                    <div class="promotion-item">
+                        <h1>What's New</h1>
+                        <p>Get ahead of the crowd by pre-ordering our Fedici-inspired Cup O' Berry Cheesecake now! Treat yourself to a delicious blend of berries and cream that's sure to delight your taste buds.</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="Images/What_s-New.jpg" alt="Cheesecake" class="promotion-image">
+                </div>
+                <div class="latest-news">
+                    <h1>Latest News</h1>
+                    <p>Liham Set promo for only P100 is still ongoing! Be the first to experience writing a letter to your future self.</p>
+                </div>
+            </div> 
+
+            <div class="welcome-section">
+                <div class="greeting">
+                    <h1>Welcome to Liham Cafe</h1>
+                </div>
+            </div>
+    
+            <div class="intro-section">
+                <div class="content">
+                    <div class="text">
+                        <!-- Left-side paragraphs -->
+                        <p>Welcome to Liham Cafe, your cozy spot in the heart of Vinzons, Camarines Norte! At Liham, we're all about bringing you fantastic coffee and a one-of-a-kind experience.</p>
+                        <br>
+                        <p>What makes us unique? Well, besides our awesome espresso and milk-based drinks, we've got a soft spot for nostalgia and connection. Ever thought about writing a letter to your future self or a loved one? We've got you covered. Scribble down your thoughts, and we'll make sure it gets to the right place - whether that's your doorstep or our cafe after a year.</p>
+                        <br>
+                        <p>Liham Cafe isn't just about great coffee; it's about creating memories and preserving messages. Swing by for a sip, a smile, and maybe a letter that'll make you grin a year from now. Cheers to coffee and connection at Liham Cafe!</p>
+                    </div>
+                    <div class="image">
+                        <!-- Right-side image -->
+                        <img src="Images/welcome.jpg" alt="Image Description">
+                    </div>
+                </div>
+            </div>
+    </header>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const dropDownMenu = document.querySelector('.dropdown_menu');
+    
+        toggleBtn.onclick = function() {
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open');
+    
+            toggleBtnIcon.className = isOpen ?
+                'fa-solid fa-xmark' :
+                'fa-solid fa-bars';
+        };
+    </script>
+
+
+</body>
+</html>

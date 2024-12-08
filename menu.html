@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Images/SURE.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="menu.css">
+    <title>Liham Cafe</title>
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <div class="navbar">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#">
+                    <img src="Images/Logooo.png" alt="Liham Cafe Logo">Liham Cafe</a>
+            </div>
+            
+            <!-- Navigation links -->
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- Toggle button -->
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    
+        <!-- Dropdown menu -->
+        <div class="dropdown_menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </div>
+    </header>
+
+     <section class="main-content">
+        <!-- Espresso Category -->
+        <h2>ESPRESSO</h2>
+        <div class="menu-category" >
+            <!-- 7 products for Espresso -->
+            <div class="menu-item" style="background-color: #c69d86;">
+                <img src="Products/Try alng.png" alt="Espresso 1">
+                <h3>AMERICANO</h3>
+                <p>HOT/ICED COFFEE</p>
+                <span>Hot-₱80 / Iced-₱90</span>
+                <br>
+                <div class="ratings-wrapper">
+                    <div data-productid="AMERICANO" class="ratings">
+                        <span data-rating="5">&#9733;</span>
+                        <span data-rating="4">&#9733;</span>
+                        <span data-rating="3">&#9733;</span>
+                        <span data-rating="2">&#9733;</span>
+                        <span data-rating="1">&#9733;</span>
+                    </div>
+                    <div class="rating-value" id="rating-value-AMERICANO"><br> Rating: 0/5</div>
+                </div>
+            </div>
+
+            <div class="menu-item" style="background-color: #c69d86;">
+                <img src="Products/Try alng.png" alt="Espresso 2">
+                <h3>LATTE</h3>
+                <p>HOT/ICED COFFEE</p>
+                <span>Hot-₱100 / Iced-₱110</span>
+                <br>
+                <div class="ratings-wrapper">
+                    <div data-productid="LATTE" class="ratings">
+                        <span data-rating="5">&#9733;</span>
+                        <span data-rating="4">&#9733;</span>
+                        <span data-rating="3">&#9733;</span>
+                        <span data-rating="2">&#9733;</span>
+                        <span data-rating="1">&#9733;</span>
+                    </div>
+                    <div class="rating-value" id="rating-value-LATTE">Rating: 0/5</div>
+                </div>
+            </div>
+
+            <div class="menu-item" style="background-color: #c69d86;">
+                <img src="Products/Try alng.png" alt="Espresso 3">
+                <h3>CAPPUCCINO</h3>
+                <p>HOT/ICED COFFEE</p>
+                <span>Hot-₱120 / Iced-₱130</span>
+                <br>
+                <div class="ratings-wrapper">
+                    <div data-productid="CAPPUCCINO" class="ratings">
+                        <span data-rating="5">&#9733;</span>
+                        <span data-rating="4">&#9733;</span>
+                        <span data-rating="3">&#9733;</span>
+                        <span data-rating="2">&#9733;</span>
+                        <span data-rating="1">&#9733;</span>
+                    </div>
+                    <div class="rating-value" id="rating-value-CAPPUCCINO">Rating: 0/5</div>
+                </div>
+            </div>
+
+            <div class="menu-item" style="background-color: #c69d86;">
+                <img src="Products/Try alng.png" alt="Espresso 4">
+                <h3>WHITE MOCHA</h3>
+                <p>HOT/ICED COFFEE</p>
+                <span>Hot-₱120 / Iced-₱130</span>
+                <br>
+                <div class="ratings-wrapper">
+                    <div data-productid="WHITE MOCHA" class="ratings">
+                        <span data-rating="5">&#9733;</span>
+                        <span data-rating="4">&#9733;</span>
+                        <span data-rating="3">&#9733;</span>
+                        <span data-rating="2">&#9733;</span>
+                        <span data-rating="1">&#9733;</span>
+                    </div>
+                    <div class="rating-value" id="rating-value-WHITE MOCHA">Rating: 0/5</div>
+                </div>
+            </div>
+
+            <div class="menu-item" style="background-color: #c69d86;">
+                <img src="Products/Try alng.png" alt="Espresso 5">
+                <h3>CARAMEL MACCHIATO</h3>
+                <p>HOT/ICED COFFEE</p>
+                <P>"BEST SELLER"</P>
+                <span>Hot-₱120 / Iced-₱130</span>
+                <br>
+                <div class="ratings-wrapper">
+                    <div data-productid="CARAMEL MACCHIATO" class="ratings">
+                        <span data-rating="5">&#9733;</span>
+                        <span data-rating="4">&#9733;</span>
+                        <span data-rating="3">&#9733;</span>
+                        <span data-rating="2">&#9733;</span>
+                        <span data-rating="1">&#9733;</span>
+                    </div>
+                    <div class="rating-value" id="rating-value-CARAMEL MACCHIATO">Rating: 0/5</div>
+                </div>
+            </div>
+
+            <div class="menu-item" style="background-color: #c69d86;">
+                <img src="Products/Try alng.png" alt="Espresso 6">
+                <h3>MOCHA</h3>
+                <p>HOT/ICED COFFEE</p>
+                <br>
+                <span>Hot-₱120 / Iced-₱130</span>
+                <br>
+                <div class="ratings-wrapper">
+                    <div data-productid="MOCHA" class="ratings">
+                        <span data-rating="5">&#9733;</span>
+                        <span data-rating="4">&#9733;</span>
+                        <span data-rating="3">&#9733;</span>
+                        <span data-rating="2">&#9733;</span>
+                        <span data-rating="1">&#9733;</span>
+                    </div>
+                    <div class="rating-value" id="rating-value-MOCHA">Rating: 0/5</div>
+                </div>
+            </div>
+
+            <div class="menu-item" style="background-color: #c69d86;">
+                <img src="Products/Try alng.png" alt="Espresso 7">
+                <h3>SPANISH LATTE</h3>
+                <p>HOT/ICED COFFEE</p>
+                <P>"BEST SELLER"</P>
+                <span>Hot-₱120 / Iced-₱130</span>
+                <br>
+                <div class="ratings-wrapper">
+                    <div data-productid="SPANISH LATTE" class="ratings">
+                        <span data-rating="5">&#9733;</span>
+                        <span data-rating="4">&#9733;</span>
+                        <span data-rating="3">&#9733;</span>
+                        <span data-rating="2">&#9733;</span>
+                        <span data-rating="1">&#9733;</span>
+                    </div>
+                    <div class="rating-value" id="rating-value-SPANISH LATTE">Rating: 0/5</div>
+                </div>
+            </div>
+            
+            <div class="add-ons">
+                <h2>Add Ons</h2>
+                <ul>
+                    <br>
+                    <li>Espresso Shot - ₱30</li>
+                    <li>Vanilla Syrup - ₱20</li>
+                    <li>Caramel Syrup - ₱20</li>
+                    <li>Hazelnut Syru - ₱20</li>
+                    <li>Caramel Sause - ₱20</li>
+                    <li>White Chocolate Sause - ₱20</li>
+                    <li>Chocolate Sause - ₱20</li>
+                    <!-- More add-ons -->
+                </ul>
+            </div>
+            
+        </div>
+        </div>
+
+        <!-- Non-Coffee Category -->
+        <h2>NON-COFFEE</h2>
+        <div class="menu-category">
+            <div class="menu-item" style="background-color: #c69d86;">
+                <img src="Products/Strawberry Milk.png" alt="Non-Coffee 1">
+                <h3>STRAWBERRY MILK</h3>
+                <p>ICED ONLY</p>
+                <P>"BEST SELLER"</P>
+                <span>Medium-₱90 / Large-₱100</span>
+                <br>
+                <div class="ratings-wrapper">
+                    <div data-productid="STRAWBERRY MILK" class="ratings">
+                        <span data-rating="5">&#9733;</span>
+                        <span data-rating="4">&#9733;</span>
+                        <span data-rating="3">&#9733;</span>
+                        <span data-rating="2">&#9733;</span>
+                        <span data-rating="1">&#9733;</span>
+                    </div>
+                    <div class="rating-value" id="rating-value-STRAWBERRY MILK">Rating: 0/5</div>
+                </div>
+            </div>
+
+            <div class="menu-item" style="background-color: #c69d86;">
+                <img src="Products/Chocolate Milk.png" alt="Non-Coffee 2">
+                <h3>CHOCOLATE MILK</h3>
+                <p>HOT/ICED</p>
+                <span>Hot-₱80</span>
+                <span>Iced M-₱90/L-₱100</span>
+                <br>
+                <div class="ratings-wrapper">
+                    <div data-productid="CHOCOLATE MILK" class="ratings">
+                        <span data-rating="5">&#9733;</span>
+                        <span data-rating="4">&#9733;</span>
+                        <span data-rating="3">&#9733;</span>
+                        <span data-rating="2">&#9733;</span>
+                        <span data-rating="1">&#9733;</span>
+                    </div>
+                    <div class="rating-value" id="rating-value-CHOCOLATE MILK">Rating: 0/5</div>
+                </div>
+            </div>
+
+            <div class="menu-item" style="background-color: #c69d86;">
+                <img src="Products/Matcha Milk.png" alt="Non-Coffee 3">
+                <h3>MATCHA MILK</h3>
+                <p>HOT/ICED</p>
+                <P>"BEST SELLER"</P>
+                <span>Hot-₱120</span>
+                <span>Iced Medium-₱130</span>
+                <div class="ratings-wrapper">
+                    <div data-productid="MATCHA MILK" class="ratings">
+                        <span data-rating="5">&#9733;</span>
+                        <span data-rating="4">&#9733;</span>
+                        <span data-rating="3">&#9733;</span>
+                        <span data-rating="2">&#9733;</span>
+                        <span data-rating="1">&#9733;</span>
+                    </div>
+                    <div class="rating-value" id="rating-value-MATCHA MILK">Rating: 0/5</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fruit Tea Category -->
+        <h2>FRUIT TEA</h2>
+        <div class="menu-category">
+            <div class="menu-item" style="background-color: #c69d86;">
+                <img src="Products/Strawberry.png" alt="Fruit Tea 1">
+                <h3>STRAWBERRY</h3>
+                <p></p>
+                <span>Medium-₱80 / Large-₱90</span>
+                <br>
+                <br>
+                <div class="ratings-wrapper">
+                    <div data-productid="STRAWBERRY" class="ratings">
+                        <span data-rating="5">&#9733;</span>
+                        <span data-rating="4">&#9733;</span>
+                        <span data-rating="3">&#9733;</span>
+                        <span data-rating="2">&#9733;</span>
+                        <span data-rating="1">&#9733;</span>
+                    </div>
+                    <div class="rating-value" id="rating-value-STRAWBERRY">Rating: 0/5</div>
+                </div>
+            </div>
+
+            <div class="menu-item" style="background-color: #c69d86;">
+                <img src="Products/Lychee.png" alt="Fruit Tea 2">
+                <h3>LYCHEE</h3>
+                <p></p>
+                <span>Medium-₱80 / Large-₱90</span>
+                <br>
+                <br>
+                <div class="ratings-wrapper">
+                    <div data-productid="LYCHEE" class="ratings">
+                        <span data-rating="5">&#9733;</span>
+                        <span data-rating="4">&#9733;</span>
+                        <span data-rating="3">&#9733;</span>
+                        <span data-rating="2">&#9733;</span>
+                        <span data-rating="1">&#9733;</span>
+                    </div>
+                    <div class="rating-value" id="rating-value-LYCHEE">Rating: 0/5</div>
+                </div>
+            </div>
+
+            <div class="menu-item" style="background-color: #c69d86;">
+                <img src="Products/Green Apple.png" alt="Fruit Tea 3">
+                <h3>GREEN APPLE</h3>
+                <p></p>
+                <span>Medium-₱80 / Large-₱90</span>
+                <br>
+                <br>
+                <div class="ratings-wrapper">
+                    <div data-productid="GREEN APPLE" class="ratings">
+                        <span data-rating="5">&#9733;</span>
+                        <span data-rating="4">&#9733;</span>
+                        <span data-rating="3">&#9733;</span>
+                        <span data-rating="2">&#9733;</span>
+                        <span data-rating="1">&#9733;</span>
+                    </div>
+                    <div class="rating-value" id="rating-value-GREEN APPLE">Rating: 0/5</div>
+                </div>
+            </div>
+
+            <div class="menu-item" style="background-color: #c69d86;"> 
+                <img src="Products/Passion Fruit.png" alt="Fruit Tea 4">
+                <h3>PASSION FRUIT</h3>
+                <p>"BEST SELLER"</p>
+                <span>Medium-₱80 / Large-₱90</span>
+                <br>
+                <div class="ratings-wrapper">
+                    <div data-productid="PASSION FRUIT" class="ratings">
+                        <span data-rating="5">&#9733;</span>
+                        <span data-rating="4">&#9733;</span>
+                        <span data-rating="3">&#9733;</span>
+                        <span data-rating="2">&#9733;</span>
+                        <span data-rating="1">&#9733;</span>
+                    </div>
+                    <div class="rating-value" id="rating-value-PASSION FRUIT">Rating: 0/5</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desserts Category -->
+        <h2>DESSERTS</h2>
+        <div class="menu-category">
+            <div class="menu-item" style="background-color: #c69d86;">
+                <img src="Products/Cake (2).png" alt="Dessert 1">
+                <h3>CHOCOLATE CAKE</h3>
+                <p></p>
+                <span>₱120</span>
+                <br>
+                <div class="ratings-wrapper">
+                    <div data-productid="CHOCOLATE CAKE" class="ratings">
+                        <span data-rating="5">&#9733;</span>
+                        <span data-rating="4">&#9733;</span>
+                        <span data-rating="3">&#9733;</span>
+                        <span data-rating="2">&#9733;</span>
+                        <span data-rating="1">&#9733;</span>
+                    </div>
+                    <div class="rating-value" id="rating-value-CHOCOLATE CAKE">Rating: 0/5</div>
+                </div>
+            </div>
+
+            <div class="menu-item" style="background-color: #c69d86;">
+                <img src="Products/jellyY (1).png" alt="Dessert 2">
+                <h3>PINK GELATIN</h3>
+                <p></p>
+                <span>₱45</span>
+                <br>
+                <div class="ratings-wrapper">
+                    <div data-productid="PINK GELATIN" class="ratings">
+                        <span data-rating="5">&#9733;</span>
+                        <span data-rating="4">&#9733;</span>
+                        <span data-rating="3">&#9733;</span>
+                        <span data-rating="2">&#9733;</span>
+                        <span data-rating="1">&#9733;</span>
+                    </div>
+                    <div class="rating-value" id="rating-value-PINK GELATIN">Rating: 0/5</div>
+                </div>
+            </div>
+
+            <div class="menu-item" style="background-color: #c69d86;">
+                <img src="Products/Egg Piee.png" alt="Dessert 3">
+                <h3>EGG PIE</h3>
+                <p></p>
+                <span>₱99</span>
+                <br>
+                <div class="ratings-wrapper">
+                    <div data-productid="EGG PIE" class="ratings">
+                        <span data-rating="5">&#9733;</span>
+                        <span data-rating="4">&#9733;</span>
+                        <span data-rating="3">&#9733;</span>
+                        <span data-rating="2">&#9733;</span>
+                        <span data-rating="1">&#9733;</span>
+                    </div>
+                    <div class="rating-value" id="rating-value-EGG PIE">Rating: 0/5</div>
+                </div>
+            </div>
+
+            <div class="menu-item" style="background-color: #c69d86;">
+                <img src="Products/BERRY (1).png" alt="Dessert 4">
+                <h3>CUP O' BERRY CHEESECAKE</h3>
+                <p>PRE-ORDER ONLY</p>
+                <span></span>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </section>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const dropDownMenu = document.querySelector('.dropdown_menu');
+    
+        toggleBtn.onclick = function() {
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open');
+    
+            toggleBtnIcon.className = isOpen ?
+                'fa-solid fa-xmark' :
+                'fa-solid fa-bars';
+        };
+    </script>
+</body>
+</html>

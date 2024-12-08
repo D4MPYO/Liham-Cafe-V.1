@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Images/SURE.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="location.css">
+    <title>Liham Cafe</title>
+</head>
+<body>
+<header>
+    <!-- Navbar -->
+    <div class="navbar">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="#">
+                <img src="Images/Logooo.png" alt="Liham Cafe Logo">Liham Cafe</a>
+        </div>
+        
+        <!-- Navigation links -->
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="location.html" class="active">Location</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <!-- Toggle button -->
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+    <!-- Dropdown menu -->
+    <div class="dropdown_menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="location.html">Location</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </div>
+
+</header>
+
+<main class="container">
+    <aside class="store-info">
+        <!-- Store information -->
+        <div class="store-hours">
+            <h1>Liham Cafe, Vinzons</h1>
+            <BR></BR>
+            <p>Barangay I, Sta, Cruz Street, Vinzons, Camarines Norte, Philippines</p>
+            <p>300 m away from Vinzons Municipal Hall <br>(4 minute walk)</p>
+            <div class="button-container">
+                <a href="https://maps.app.goo.gl/CqAnR19cAf9aoQ1j8" class="myButton" target="_blank" rel="noopener noreferrer">Get Direction</a>
+            </div>
+            <br>
+            <h2>Store Open Hours</h2>
+            <!-- Store hours -->
+            <div class="day">Monday<span>10:00 AM - 7:00 PM</span></div>
+            <div class="day">Tuesday<span>10:00 AM - 7:00 PM</span></div>
+            <div class="day">Wednesday<span>10:00 AM - 7:00 PM</span></div>
+            <div class="day">Thursday<span>10:00 AM - 7:00 PM</span></div>
+            <div class="day">Friday<span>10:00 AM - 7:00 PM</span></div>
+            <div class="day">Saturday<span>10:00 AM - 7:00 PM</span></div>
+            <div class="day">Sunday<span style="color: red;">CLOSED</span></div>
+        </div>
+        
+    </aside>
+    <section class="map-container" style="order: 2; flex-basis: 600px; flex-grow: 1; flex-shrink: 1;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4261.19718953467!2d122.904375311067!3d14.175976286204339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3398b1ee9136a601%3A0x9036f7a566d11bda!2sLiham%20Cafe!5e1!3m2!1sen!2sph!4v1701341254890!5m2!1sen!2sph" 
+        width="100%" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+</main>
+<script>
+    const toggleBtn = document.querySelector('.toggle_btn');
+    const toggleBtnIcon = document.querySelector('.toggle_btn i');
+    const dropDownMenu = document.querySelector('.dropdown_menu');
+
+    toggleBtn.onclick = function() {
+        dropDownMenu.classList.toggle('open');
+        const isOpen = dropDownMenu.classList.contains('open');
+
+        toggleBtnIcon.className = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+    };
+</script>
+</body>
+</html>
